@@ -1,0 +1,33 @@
+<!-- recent posts/home page -->
+
+<div class="posts">
+	
+	<div class="post-body">
+		<h3><%= post.body %></h3>
+		<h4>location:  <%= post.location %> || type:  <%= post.event_type %></h4>
+	</div>
+
+	<div class="delete">
+		<% if current_user and current_user == post.user %>
+		<%= link_to 'delete', post, method: :delete  %>
+	</div>
+		
+		
+
+	
+	<div class= "posted-by">
+	<p>posted <%= time_ago_in_words(post.created_at) %> by 
+		<%= link_to post.user.username, username_path(post.user.username) %>
+		<% if current_user and current_user == post.user %> <% end %></p>
+
+			<% end %>
+	</div> 
+		  
+</div>
+
+
+	
+	
+
+
+

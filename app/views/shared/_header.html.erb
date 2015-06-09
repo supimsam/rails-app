@@ -1,0 +1,25 @@
+
+<!-- header page -->
+
+<header>
+	<h3><%= link_to 'Bash', root_path %></h3>
+	<nav>
+		<ul>
+			<% if current_user %>
+				<li>Hello <%= current_user.username %></li>
+				
+				<li><%= link_to 'home', root_path %></li>
+
+				<li><%= link_to 'profile', profile_path %></li>
+
+				<li><%= link_to 'new event', new_post_path %></li>
+
+				
+				<li><%= link_to 'logout', logout_path, method: :delete %></li>
+			<% else %>
+				<li><%= link_to 'log in', login_path %></li>
+				<li><%= link_to 'sign up', new_user_path %></li>
+			<% end %>
+		</ul>
+	</nav>
+</header>

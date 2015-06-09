@@ -1,0 +1,272 @@
+
+body {
+	font-family: Arial;
+	font-size: 18px;
+	background-color: #D4D7FE;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: .15em 1em;
+	background-color: #666666;
+	border-bottom: 1px solid white;
+
+	
+
+}
+
+header h3 {
+	display: inline-block;
+	font-size: 1.15em;
+
+
+}
+
+header h3 a {
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	font-style: italic;
+}
+
+header h3 a:hover {
+
+	color:#6886ff;
+	font-weight: 900;
+}
+
+header nav {
+	float: right;
+	margin-right: 2.5em;
+}
+
+header nav li {
+	display: inline-block;
+	font-size: .9em;
+}
+
+header nav li a {
+	padding: .25em .5em;
+	display: block;
+	color: white;
+	text-decoration: none;
+	background-color: #6886ff;
+	border-radius: 6px 6px;
+	margin-left: .5em;
+}
+
+header nav li a:hover {
+
+	color:#666666;
+	font-weight: 900;
+}
+
+
+main {
+	max-width: 600px; 
+	border: 1px solid transparent; 
+	margin: 100px auto;
+	padding: 2em;
+	background-color: #6886ff;
+	border-radius: 6px 6px;
+
+}
+
+input {
+	padding: .5em;
+	text-align: center;
+	background-color: white;
+	border: 2px solid #D4D7FE;
+	border-radius: 6px 6px;
+	font-size: 16px;
+	font-weight: 200;
+	width: 250px;
+}
+
+form div {
+	
+	
+	font-size: 16px;
+	padding: 20px;
+	border-radius: 6px 6px;
+
+}
+
+
+.event {
+	padding: .25em 0;
+	border-bottom: 1px solid #68D1FF;
+}
+
+.event h3 {
+	font-weight: normal;
+
+}
+
+.event p {
+	font-size: .75em;
+	color: #999;
+	font-style: italic;
+}
+
+.event p a {
+	text-decoration: none;
+	color: #666;
+}
+
+textarea {
+	padding: 1em;
+	font-size: 1.25em;
+	width: 400px;
+	background-color: #ECF0F1;
+	border: 1px solid transparent;
+	border-radius: 6px 6px;
+	font-size: 16px;
+}
+
+
+section {
+	background-color: white;
+	border: 1px solid transparent;
+	border-radius: 6px 6px;
+	font-size: 16px;
+	font-weight: 200;
+	margin-bottom: 60px;
+	margin-top: 20px;
+	padding: 20px 5px;
+	
+}
+
+.posts {
+	background-color: #D4D7FE;
+	border: 1px solid transparent;
+	border-radius: 6px 6px;
+	font-size: 16px;
+	font-weight: 200;
+	margin-bottom: 60px;
+	margin-top: 60px;
+	padding: 20px;
+	text-align: left;
+	
+
+}
+
+.post-body h4 {
+	text-align: left;
+	opacity: 0.5;
+
+
+
+}
+
+
+.posted-by {
+	text-align: right;
+	margin-top: 60px;
+	opacity: 0.7;
+}
+
+.post-body {
+	
+	border: 1px solid transparent;
+	background-color: white;
+	padding: .25em .5em;
+
+
+}
+
+.delete {
+	text-align: right;
+}
+
+
+
+
+.recent-header h3 {
+
+	padding: .25em .5em;
+	display: block;
+	color: white;
+	border-radius: 6px 6px;
+	font-style: italic;
+	position: absolute;
+	font-size: 24px;
+	
+}
+
+
+.posts h3 {
+
+	text-align: left;
+	font-size: 24px;
+	
+
+}
+
+.edit-profile {
+	text-align: right;
+}
+
+
+.followers {
+	text-align: right;
+	padding: 0px 15px;
+
+
+
+
+
+}
+
+.follow-button  a {
+	padding: .25em .5em;
+	color: white;
+	text-decoration: none;
+	background-color: #666666;
+	border-radius: 6px 6px;
+	float: right;
+	margin-top: 10px;
+
+
+}
+
+.profile {
+	
+	border: 1px solid transparent; 
+	background-color: #D4D7FE;
+	border-radius: 6px 6px;
+	padding: 2px 15px;
+
+}
+
+.profile h3 {
+	text-align: left;
+	color: black;
+}
+
+
+
+.close-account-background {
+
+	background-color: white;
+	border: 1px solid transparent;
+	border-radius: 6px 6px;
+	font-size: 16px;
+	font-weight: 200;
+	margin-bottom: 60px;
+	margin-top: 20px;
+	padding: 20px 5px;
+
+
+}
+
+.close-account-button {
+	text-align: right;
+
+
+}	
+
+

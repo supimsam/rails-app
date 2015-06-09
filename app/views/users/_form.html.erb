@@ -1,0 +1,33 @@
+<%= form_for @user, :html => { :multipart => true } do |f| %>
+	
+	<%= render partial: 'errors' %>
+
+	<div>
+		
+		<%= f.text_field :username, :placeholder => "username" %>
+	</div>
+	<div>
+		
+		<%= f.text_field :fname, :placeholder => "first name" %>
+	</div>
+	<div>
+		
+		<%= f.text_field :lname, :placeholder => "last name" %>
+	</div>
+	<div>
+		
+		<%= f.email_field :email, :placeholder => "email" %>
+	</div>
+
+	<% unless current_user %>
+		<%= render partial: 'password', locals: {f: f} %>
+	<% end %>
+
+	<div>
+		<%= f.file_field :image %>
+	</div>
+	
+	<div>
+		<%= f.submit %>
+	</div>
+<% end %>

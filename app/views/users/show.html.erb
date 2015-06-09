@@ -1,0 +1,78 @@
+
+<!-- user profile page -->
+
+<div class="follow-button">
+
+	<% if current_user and current_user != @user %>
+			<% if current_user and current_user.following.include?(@user) %>
+				
+				<%= link_to 'unfollow', unfollow_user_path(@user), remote: true %>
+			<% else %>
+				<%= link_to 'follow', follow_user_path(@user) %>
+			<% end %>
+		<% end %>
+	</div>
+
+
+<div class="recent-header">
+	<h3><%= @user.username %>'s Posts</h3> 
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<div class= "followers">
+
+	Following <%= @user.following.length %> |
+	Followers <%= @user.followers.length %> 
+</div>	
+
+<br>
+<br>
+
+<div class="profile">
+		<% if @post %> 
+		<% @post.each do |post| %>
+</div>
+		
+<div class="posts">
+	
+	<div class="post-body">
+		<h3><%= post.body %></h3>
+		<h4>location:  <%= post.location %> || type:  <%= post.event_type %></h4>
+
+<div class="delete">
+	<% if current_user and current_user == post.user %>
+		<%= link_to 'delete', post, method: :delete  %>
+</div> 
+		
+	</div>
+
+	
+<div class= "posted-by">
+	<p>posted <%= time_ago_in_words(post.created_at) %> 
+		<% if current_user and current_user == post.user %> 
+		<% end %> </p>
+</div>		 
+</div>
+
+
+		  
+		<% end %>
+	
+
+
+
+		
+		<% end %>
+	<% end %>
+
+	
+<div class="edit-profile">
+
+	<%= link_to 'edit profile', edit_profile_path %>
+</div>
+

@@ -1,0 +1,29 @@
+
+<div class="profile">
+
+
+<h3>Are you sure you want to delete your account? <br> <br>This cannot be undone.</h3>
+
+
+
+<div class="close-account-background">
+
+<p>confirm your password below:</p>
+
+
+
+<%= form_for current_user, method: :delete do |f| %>
+	
+	<div>
+		
+		<%= f.password_field :password , :placeholder=> "password" %>
+	</div>
+
+	<div class="close-account-button">
+
+		<%= f.submit "Close my account" %>
+	</div>
+
+<% end %>
+</div>
+</div>

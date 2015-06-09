@@ -1,0 +1,38 @@
+<!-- create event page -->
+
+<div class="recent-header">
+	<h3>Create Event</h3>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="profile">
+<%= form_for @post do |f| %>
+	
+	<% if @post.errors.any? %>
+		<% @post.errors.full_messages.each do | error | %>
+			<p><%= error %></p>
+		<% end %>
+	<% end %>
+
+	<div class "post-box">
+		<%= f.text_area :body, placeholder: "Create your event..." %>
+	<br>
+	<br>
+
+<%= f.select(:location, options_for_select(['Select location', 'Oakland', 'Berkeley' , 'SF' , 'Walnutcreek']))%>
+
+
+<%= f.select(:event_type, options_for_select(['Select Event Type', 'Party', 'Sesh' , 'Kickback']))%>
+
+</div>
+
+	<div>
+		<%= f.submit "Post" %>
+	</div>
+<% end %>
+
+</div>
